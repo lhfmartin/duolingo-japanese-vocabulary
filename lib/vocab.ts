@@ -1,6 +1,6 @@
 import { createReadStream, readdirSync } from "node:fs";
 import { join } from "node:path";
-import { once } from "node:events";
+import { pipeline } from "node:stream/promises";
 import csv from "csv-parser";
 import type { Word } from "@/types/word";
 
@@ -24,20 +24,15 @@ function bySectionThenUnit(a: string, b: string): number {
   return ka.unit - kb.unit;
 }
 
-function parseCsvFile(filePath: string): Promise<Word[]> {
-  return new Promise((resolve, reject) => {
-    const words: Word[] = [];
-    const stream = createReadStream(filePath)
-      .pipe(
-        csv({
-          mapHeaders: ({ header }) => header.replace(/^\uFEFF/, "").trim(),
-        })
-      )
-      .on("data", (row: Word) => words.push(row))
-      .on("error", reject);
+async function parseCsvFile(filePath: string): Promise<Word[]> {
+  const words: Word[] = [];
+  const parser = csv({
+    mapHeaders: ({ header }) => header.replace(/^\uFEFF/, "").trim(),
+  }).on("data", (row: Word) => words.push(row));
 
-    once(stream, "end").then(() => resolve(words)).catch(reject);
-  });
+  await pipeline(createReadStream(filePath), parser);
+  
+  return words;
 }
 
 export async function loadVocabulary(): Promise<VocabularyFile[]> {
