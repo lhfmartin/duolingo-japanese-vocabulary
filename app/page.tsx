@@ -1,4 +1,4 @@
-import { loadVocabulary } from "@/lib/vocab";
+import { loadVocabulary } from "@/lib/load-vocabulary";
 import { VocabularyTable } from "@/app/components/VocabularyTable";
 
 export default async function Home() {
