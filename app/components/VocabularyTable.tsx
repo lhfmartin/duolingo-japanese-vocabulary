@@ -69,7 +69,7 @@ export function VocabularyTable({ title, words }: VocabularyTableProps) {
       <h2 className="text-xl font-semibold">{title}</h2>
       <div className="overflow-x-auto rounded-lg border border-zinc-200">
         <table className="w-full table-fixed border-collapse text-left text-sm">
-          <thead className="light:bg-zinc-50">
+          <thead className="bg-zinc-50 dark:bg-transparent">
             {table.getHeaderGroups().map((group) => (
               <tr key={group.id}>
                 {group.headers.map((header) => (
