@@ -26,7 +26,7 @@ Use `pnpm` (v10.29.3, pinned via `packageManager`). `pnpm-workspace.yaml` only l
 
 ## Serving data (read-only)
 
-Vocabulary lives in `data/*.csv` with columns `Kana, Kanji, Meaning, Notes, Part Of Speech, Romaji` — see `types/word.ts`. Files are read at build time by `lib/load-vocabulary.ts`, ordered by parsing `Section N` / `Unit N` from each filename (non-matching files sort last). To add words, add or edit a CSV in `data/` (UTF-8 w/ optional BOM handled via `mapHeaders`); filenames must follow `Section N - Unit N <Title>.csv`. Note: `Extras`/`Extra` title variants sort after main units.
+Vocabulary lives in `data/*.csv` with columns `Kana, Kanji, Meaning, Notes, Part Of Speech, Romaji` — see `types/word.ts`. Files are read at build time by `lib/load-vocabulary.ts`, ordered by parsing `Section N` / `Unit N` from each filename (non-matching files sort last). To add words, add or edit a CSV in `data/` (UTF-8 w/ optional BOM handled via `mapHeaders`); filenames must follow `Section N - Unit N <Title>.csv`, except for a few course update units in section 3, which should be placed between unit 14 and 15 of section 3.
 
 ## Deployment / base path
 

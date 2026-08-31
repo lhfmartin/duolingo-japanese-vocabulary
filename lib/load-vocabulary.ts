@@ -13,7 +13,12 @@ function parseSectionAndUnitFromFileName(filename: string): { section: number; u
   const sectionMatch = filename.match(/Section\s+(\d+)/i);
   const section = sectionMatch ? Number(sectionMatch[1]) : Number.MAX_SAFE_INTEGER;
   const unitMatch = filename.match(/\bUnit\s+(\d+)/i);
-  const unit = unitMatch ? Number(unitMatch[1]) : Number.MAX_SAFE_INTEGER;
+  let unit = unitMatch ? Number(unitMatch[1]) : Number.MAX_SAFE_INTEGER;
+  if (filename.includes("Section 3 - Extra Unit")) {
+    unit = 14 + unit / 10;
+  } else if (filename.includes("Section 3 - Extras")) {
+    unit = 14.4;
+  }
   return { section, unit };
 }
 
