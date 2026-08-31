@@ -40,8 +40,8 @@ async function globalAfterAll() {
 
 const test = base.extend<{}, { forEachWorker: void }>({
   forEachWorker: [
+    // oxlint-disable-next-line no-empty-pattern
     async ({}, use) => {
-      // oxlint-disable-line no-empty-pattern
       await globalBeforeAll();
       await use();
       await globalAfterAll();
