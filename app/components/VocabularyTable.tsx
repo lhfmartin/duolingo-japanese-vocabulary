@@ -90,7 +90,7 @@ export function VocabularyTable({ title, words }: VocabularyTableProps) {
               return (
                 <tr key={row.id}>
                   {row.getAllCells().map((cell) => (
-                    <td
+                    <td // oxlint-disable-line control-has-associated-label
                       key={cell.id}
                       className={`px-3 py-2 align-top whitespace-pre-wrap [&:not(:first-child)]:border-l ${
                         isLastRow ? "" : "border-b"
