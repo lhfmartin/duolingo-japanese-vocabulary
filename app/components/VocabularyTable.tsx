@@ -36,11 +36,11 @@ const partOfSpeechColors: Record<string, string> = {
 };
 
 function renderPos(value: string) {
-  const color = partOfSpeechColors[value];
+  const badgeColor = partOfSpeechColors[value];
   return (
     <span
-      className={color ? "inline-flex rounded px-2 py-0.5" : undefined}
-      style={color ? { backgroundColor: color } : undefined}
+      className={badgeColor ? "inline-flex rounded px-2 py-0.5 dark:text-black" : undefined}
+      style={badgeColor ? { backgroundColor: badgeColor } : undefined}
     >
       {value}
     </span>
@@ -69,7 +69,7 @@ export function VocabularyTable({ title, words }: VocabularyTableProps) {
       <h2 className="text-xl font-semibold">{title}</h2>
       <div className="overflow-x-auto rounded-lg border border-zinc-200">
         <table className="w-full table-fixed border-collapse text-left text-sm">
-          <thead className="bg-zinc-50">
+          <thead className="light:bg-zinc-50">
             {table.getHeaderGroups().map((group) => (
               <tr key={group.id}>
                 {group.headers.map((header) => (
