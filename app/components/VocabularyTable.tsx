@@ -78,9 +78,7 @@ export function VocabularyTable({ title, words }: VocabularyTableProps) {
                     className="border-b border-zinc-200 px-3 py-2 font-semibold [&:not(:first-child)]:border-l"
                     style={{ width: header.getSize() }}
                   >
-                    {header.isPlaceholder ? null : (
-                      <table.FlexRender header={header} />
-                    )}
+                    {header.isPlaceholder ? null : <table.FlexRender header={header} />}
                   </th>
                 ))}
               </tr>
@@ -88,8 +86,7 @@ export function VocabularyTable({ title, words }: VocabularyTableProps) {
           </thead>
           <tbody>
             {table.getRowModel().rows.map((row, rowIndex) => {
-              const isLastRow =
-                rowIndex === table.getRowModel().rows.length - 1;
+              const isLastRow = rowIndex === table.getRowModel().rows.length - 1;
               return (
                 <tr key={row.id}>
                   {row.getAllCells().map((cell) => (

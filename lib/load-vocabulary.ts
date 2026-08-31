@@ -31,7 +31,7 @@ async function parseCsvFile(filePath: string): Promise<Word[]> {
   }).on("data", (row: Word) => words.push(row));
 
   await pipeline(createReadStream(filePath), parser);
-  
+
   return words;
 }
 
@@ -44,6 +44,6 @@ export async function loadVocabulary(): Promise<VocabularyFile[]> {
     fileNames.map(async (fileName) => ({
       title: fileName.replace(/\.csv$/i, ""),
       words: await parseCsvFile(join(dataDir, fileName)),
-    }))
+    })),
   );
 }

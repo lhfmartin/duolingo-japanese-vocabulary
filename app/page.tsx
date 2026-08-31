@@ -10,11 +10,7 @@ export default async function Home() {
         <h1 className="text-3xl font-bold">Duolingo Japanese Vocabulary</h1>
       </header>
       {vocabulary.map((entry, index) => (
-        <VocabularyTable
-          key={`${entry.title}-${index}`}
-          title={entry.title}
-          words={entry.words}
-        />
+        <VocabularyTable key={`${entry.title}-${index}`} title={entry.title} words={entry.words} />
       ))}
     </main>
   );
