@@ -4,7 +4,7 @@ import { pipeline } from "node:stream/promises";
 import csv from "csv-parser";
 import type { Word } from "@/types/word";
 
-export interface VocabularyFile {
+export interface Unit {
   title: string;
   words: Word[];
 }
@@ -40,7 +40,7 @@ async function parseCsvFile(filePath: string): Promise<Word[]> {
   return words;
 }
 
-export async function loadVocabulary(): Promise<VocabularyFile[]> {
+export async function loadAllUnits(): Promise<Unit[]> {
   const dataDir = join(process.cwd(), "data");
   const fileNames = readdirSync(dataDir).filter((f) => f.endsWith(".csv"));
   fileNames.sort(bySectionThenUnit);
