@@ -1,4 +1,4 @@
 {
   "*.{js,jsx,ts,tsx,mjs,cjs}": "pnpm lint",
-  "*": "pnpm fmt"
+  "*": "pnpm fmt --no-error-on-unmatched-pattern"
 }
