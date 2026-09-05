@@ -1,20 +1,28 @@
 "use client";
 
-import { useState } from "react";
 import {
+  columnFilteringFeature,
   columnSizingFeature,
   createColumnHelper,
+  createFilteredRowModel,
+  globalFilteringFeature,
   tableFeatures,
   useTable,
 } from "@tanstack/react-table";
 import type { Word } from "@/types/word";
 
-const features = tableFeatures({ columnSizingFeature });
+const features = tableFeatures({
+  columnSizingFeature,
+  columnFilteringFeature,
+  globalFilteringFeature,
+  filteredRowModel: createFilteredRowModel(),
+});
 const helper = createColumnHelper<typeof features, Word>();
 
 interface VocabularyTableProps {
   title: string;
   words: Word[];
+  query: string;
 }
 
 const partOfSpeechColors: Record<string, string> = {
@@ -47,22 +55,32 @@ function renderPos(value: string) {
   );
 }
 
-export function VocabularyTable({ title, words }: VocabularyTableProps) {
-  const [data] = useState<Word[]>(words);
+export function VocabularyTable({ words, title, query }: VocabularyTableProps) {
   const columns = helper.columns([
     helper.accessor("Kana", { header: "Kana", size: 200 }),
     helper.accessor("Kanji", { header: "Kanji", size: 220 }),
     helper.accessor("Romaji", { header: "Romaji", size: 220 }),
     helper.accessor("Meaning", { header: "Meaning", size: 220 }),
-    helper.accessor("Notes", { header: "Notes", size: 180 }),
+    helper.accessor("Notes", { header: "Notes", size: 180, enableGlobalFilter: false }),
     helper.accessor("Part Of Speech", {
       header: "Part Of Speech",
       cell: (info) => renderPos(info.getValue() ?? ""),
       size: 140,
+      enableGlobalFilter: false,
     }),
   ]);
 
-  const table = useTable({ features, columns, data });
+  const table = useTable({
+    features,
+    columns,
+    data: words,
+    state: { globalFilter: query.toLowerCase().trim() },
+  });
+
+  const rows = table.getRowModel().rows;
+  if (rows.length === 0) {
+    return null;
+  }
 
   return (
     <section className="space-y-3">
@@ -85,8 +103,8 @@ export function VocabularyTable({ title, words }: VocabularyTableProps) {
             ))}
           </thead>
           <tbody>
-            {table.getRowModel().rows.map((row, rowIndex) => {
-              const isLastRow = rowIndex === table.getRowModel().rows.length - 1;
+            {rows.map((row, rowIndex) => {
+              const isLastRow = rowIndex === rows.length - 1;
               return (
                 <tr key={row.id}>
                   {row.getAllCells().map((cell) => (
