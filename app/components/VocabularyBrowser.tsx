@@ -1,9 +1,8 @@
 "use client";
 
-import { useState } from "react";
+import { useDeferredValue, useState } from "react";
 import { VocabularyTable } from "@/app/components/VocabularyTable";
 import type { Unit } from "@/lib/load-vocabulary-data";
-import type { Word } from "@/types/word";
 
 interface VocabularyBrowserProps {
   units: Unit[];
@@ -11,6 +10,7 @@ interface VocabularyBrowserProps {
 
 export function VocabularyBrowser({ units }: VocabularyBrowserProps) {
   const [query, setQuery] = useState("");
+  const deferredQuery = useDeferredValue(query);
 
   return (
     <>
@@ -27,7 +27,7 @@ export function VocabularyBrowser({ units }: VocabularyBrowserProps) {
           key={`${entry.title}-${index}`}
           title={entry.title}
           words={entry.words}
-          query={query}
+          query={deferredQuery}
         />
       ))}
     </>
