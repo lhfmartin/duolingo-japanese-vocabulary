@@ -1,6 +1,6 @@
 "use client";
 
-import { useDeferredValue, useState } from "react";
+import { useEffect, useDeferredValue, useRef, useState } from "react";
 import { VocabularyTable } from "@/app/components/VocabularyTable";
 import type { Unit } from "@/lib/load-vocabulary-data";
 
@@ -11,10 +11,24 @@ interface VocabularyBrowserProps {
 export function VocabularyBrowser({ units }: VocabularyBrowserProps) {
   const [query, setQuery] = useState("");
   const deferredQuery = useDeferredValue(query);
+  const inputRef = useRef<HTMLInputElement>(null);
+
+  useEffect(() => {
+    function handleKeyDown(e: KeyboardEvent) {
+      if ((e.metaKey || e.ctrlKey) && e.key === "f") {
+        e.preventDefault();
+        inputRef.current?.focus();
+      }
+    }
+
+    document.addEventListener("keydown", handleKeyDown);
+    return () => document.removeEventListener("keydown", handleKeyDown);
+  }, []);
 
   return (
     <>
       <input
+        ref={inputRef}
         type="search"
         value={query}
         onChange={(event) => setQuery(event.target.value)}
