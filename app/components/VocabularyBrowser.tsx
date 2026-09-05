@@ -16,8 +16,10 @@ export function VocabularyBrowser({ units }: VocabularyBrowserProps) {
   useEffect(() => {
     function handleKeyDown(e: KeyboardEvent) {
       if ((e.metaKey || e.ctrlKey) && e.key === "f") {
-        e.preventDefault();
-        inputRef.current?.focus();
+        if (inputRef.current !== document.activeElement) {
+          e.preventDefault();
+          inputRef.current?.focus();
+        }
       }
     }
 
