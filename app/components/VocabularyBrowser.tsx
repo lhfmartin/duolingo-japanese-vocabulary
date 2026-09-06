@@ -36,7 +36,7 @@ export function VocabularyBrowser({ units }: VocabularyBrowserProps) {
         onChange={(event) => setQuery(event.target.value)}
         placeholder="Search by kana, kanji, romaji, or meaning"
         aria-label="Search"
-        className="w-lg rounded-full border border-zinc-300 px-4 py-2 text-sm placeholder-zinc-400 focus:outline-none dark:border-zinc-700"
+        className="w-lg max-w-full rounded-full border border-zinc-300 px-4 py-2 text-sm placeholder-zinc-400 focus:outline-none dark:border-zinc-700"
         suppressHydrationWarning // Playwright changes the caret color to transparent, see https://playwright.dev/docs/api/class-pageassertions#page-assertions-to-have-screenshot-1
       />
       {units.map((entry, index) => (
