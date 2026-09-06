@@ -1,11 +1,15 @@
 import { defineConfig } from "@playwright/test";
 import nextConfig from "./next.config";
+import { randomInt } from "node:crypto";
+
+process.env.WEB_SERVER_PORT = process.env.WEB_SERVER_PORT ?? String(randomInt(49152, 65536));
+process.env.EMPTY_BASE_PATH = "true";
 
 export default defineConfig({
   // Run your local dev server before starting the tests
   webServer: {
-    command: "pnpm dev -H 0.0.0.0",
-    url: "http://localhost:3000" + nextConfig.basePath,
+    command: "pnpm build && pnpm exec http-server out -p " + process.env.WEB_SERVER_PORT,
+    url: "http://localhost:" + process.env.WEB_SERVER_PORT,
     stdout: "ignore",
     stderr: "pipe",
   },

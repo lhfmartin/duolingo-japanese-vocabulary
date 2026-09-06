@@ -2,8 +2,7 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   output: "export",
-  basePath: "/duolingo-japanese-vocabulary",
-  allowedDevOrigins: ["host.docker.internal"],
+  basePath: process.env.EMPTY_BASE_PATH === "true" ? "" : "/duolingo-japanese-vocabulary",
 };
 
 export default nextConfig;
