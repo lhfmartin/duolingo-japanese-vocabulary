@@ -1,6 +1,5 @@
 import express from "express";
 import { createProxyMiddleware } from "http-proxy-middleware";
-import nextConfig from "../../next.config.ts";
 import { parseArgs } from "node:util";
 
 const args = parseArgs({
@@ -14,17 +13,23 @@ const args = parseArgs({
       type: "string",
       default: "8080",
     },
+    "rewrite-rule": {
+      type: "string",
+    },
   },
 });
 
 const app = express();
 
+const [oldPath, newPath] = args.values["rewrite-rule"]!.split(":");
+
 app.use(
-  nextConfig.basePath,
+  "/",
   createProxyMiddleware({
     target: `http://${args.values.hostname}:${args.values.port}`,
     changeOrigin: true,
-    pathRewrite: { [`^/${nextConfig.basePath}`]: "" },
+    pathRewrite: { [oldPath]: newPath },
+    pathFilter: oldPath,
   }),
 );
 
