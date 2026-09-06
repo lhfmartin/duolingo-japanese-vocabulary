@@ -15,13 +15,13 @@ let playwrightContainer: StartedTestContainer;
 
 async function startPlaywrightContainer() {
   return new GenericContainer(`mcr.microsoft.com/playwright:v${playwrightTestVersion}-noble`)
-    .withExposedPorts(3001)
+    .withExposedPorts(3000)
     .withUser("pwuser")
     .withWorkingDir("/home/pwuser")
     .withIpcMode("host")
     .withExtraHosts([{ host: "host.docker.internal", ipAddress: "host-gateway" }])
     .withCommand(
-      `npx -y playwright@${playwrightTestVersion} run-server --port 3001 --host 0.0.0.0`.split(" "),
+      `npx -y playwright@${playwrightTestVersion} run-server --port 3000 --host 0.0.0.0`.split(" "),
     )
     .withStartupTimeout(PLAYWRIGHT_TEST_CONTAINER_START_STOP_TIMEOUT)
     .start();
