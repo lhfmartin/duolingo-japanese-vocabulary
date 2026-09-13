@@ -1,8 +1,9 @@
 "use client";
 
-import { useEffect, useDeferredValue, useRef, useState } from "react";
+import { useDeferredValue, useState } from "react";
 import { VocabularyTable } from "@/app/components/VocabularyTable";
 import type { Unit } from "@/lib/load-vocabulary-data";
+import SearchInput from "./SearchInput";
 
 interface VocabularyBrowserProps {
   units: Unit[];
@@ -11,35 +12,11 @@ interface VocabularyBrowserProps {
 export function VocabularyBrowser({ units }: VocabularyBrowserProps) {
   const [query, setQuery] = useState("");
   const deferredQuery = useDeferredValue(query);
-  const inputRef = useRef<HTMLInputElement>(null);
-
-  useEffect(() => {
-    function handleKeyDown(e: KeyboardEvent) {
-      if ((e.metaKey || e.ctrlKey) && e.key === "f") {
-        if (inputRef.current !== document.activeElement) {
-          e.preventDefault();
-          inputRef.current?.focus();
-        }
-      }
-    }
-
-    document.addEventListener("keydown", handleKeyDown);
-    return () => document.removeEventListener("keydown", handleKeyDown);
-  }, []);
 
   return (
     <>
-      <input
-        ref={inputRef}
-        type="search"
-        value={query}
-        onChange={(event) => setQuery(event.target.value)}
-        placeholder="Search by kana, kanji, romaji, or meaning"
-        aria-label="Search"
-        className="w-lg max-w-full rounded-full border border-zinc-300 px-4 py-2 text-sm placeholder-zinc-400 focus:outline-none dark:border-zinc-700"
-        suppressHydrationWarning // Playwright changes the caret color to transparent, see https://playwright.dev/docs/api/class-pageassertions#page-assertions-to-have-screenshot-1
-      />
-      {units.map((entry, index) => (
+      <SearchInput query={query} setQuery={setQuery} />
+      {units.map((entry) => (
         <VocabularyTable
           key={entry.title}
           title={entry.title}
