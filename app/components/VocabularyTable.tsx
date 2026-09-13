@@ -10,6 +10,7 @@ import {
   useTable,
 } from "@tanstack/react-table";
 import type { Word } from "@/types/word";
+import PartOfSpeechBadge from "@/app/components/PartOfSpeechBadge";
 
 const features = tableFeatures({
   columnSizingFeature,
@@ -19,57 +20,27 @@ const features = tableFeatures({
 });
 const helper = createColumnHelper<typeof features, Word>();
 
+const columns = helper.columns([
+  helper.accessor("Kana", { header: "Kana", size: 200 }),
+  helper.accessor("Kanji", { header: "Kanji", size: 220 }),
+  helper.accessor("Romaji", { header: "Romaji", size: 220 }),
+  helper.accessor("Meaning", { header: "Meaning", size: 220 }),
+  helper.accessor("Notes", { header: "Notes", size: 180, enableGlobalFilter: false }),
+  helper.accessor("Part Of Speech", {
+    header: "Part Of Speech",
+    cell: (cellData) => PartOfSpeechBadge(cellData.getValue() ?? ""),
+    size: 140,
+    enableGlobalFilter: false,
+  }),
+]);
+
 interface VocabularyTableProps {
   title: string;
   words: Word[];
   query: string;
 }
 
-const partOfSpeechColors: Record<string, string> = {
-  "Noun (n.)": "#fee2e2",
-  Expression: "#fef3c7",
-  Conjunction: "#dcfce7",
-  "I-Adjective": "#cffafe",
-  Suffix: "#fce7f3",
-  Pronoun: "#ede9fe",
-  Particle: "#f3e8ff",
-  Other: "#f1f5f9",
-  "Na-adjective": "#e0e7ff",
-  "Godan Verb": "#fef9c3",
-  Adverb: "#e0f2fe",
-  Counter: "#ffedd5",
-  "Ichidan Verb": "#ffe4e6",
-  "Irregular Verb": "#fae8ff",
-  Prefix: "#e2e8f0",
-};
-
-function renderPos(value: string) {
-  const badgeColor = partOfSpeechColors[value];
-  return (
-    <span
-      className={badgeColor ? "inline-flex rounded px-2 py-0.5 dark:text-black" : undefined}
-      style={badgeColor ? { backgroundColor: badgeColor } : undefined}
-    >
-      {value}
-    </span>
-  );
-}
-
 export function VocabularyTable({ words, title, query }: VocabularyTableProps) {
-  const columns = helper.columns([
-    helper.accessor("Kana", { header: "Kana", size: 200 }),
-    helper.accessor("Kanji", { header: "Kanji", size: 220 }),
-    helper.accessor("Romaji", { header: "Romaji", size: 220 }),
-    helper.accessor("Meaning", { header: "Meaning", size: 220 }),
-    helper.accessor("Notes", { header: "Notes", size: 180, enableGlobalFilter: false }),
-    helper.accessor("Part Of Speech", {
-      header: "Part Of Speech",
-      cell: (info) => renderPos(info.getValue() ?? ""),
-      size: 140,
-      enableGlobalFilter: false,
-    }),
-  ]);
-
   const table = useTable({
     features,
     columns,
