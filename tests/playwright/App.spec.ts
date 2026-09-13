@@ -63,5 +63,11 @@ COLOR_SCHEMES_TO_TEST.forEach((colorScheme) => {
       await page.goto(url);
       await expect(page).toHaveScreenshot();
     });
+
+    test('Visual regression testing for searching for "じゅういちがつ"', async ({ page }) => {
+      await page.goto(url);
+      await page.locator("input").fill("じゅういちがつ");
+      await expect(page).toHaveScreenshot();
+    });
   });
 });
