@@ -7,7 +7,7 @@ process.env.WEB_SERVER_PORT = process.env.WEB_SERVER_PORT ?? String(randomInt(49
 export default defineConfig({
   // Run your local dev server before starting the tests
   webServer: {
-    command: `node tests/test-utils/web-server.mts --port ${process.env.WEB_SERVER_PORT} --rewrite-rule ${nextConfig.basePath}:`,
+    command: `pnpm exec ws -d out --hostname 0.0.0.0 --port ${process.env.WEB_SERVER_PORT} --rewrite '${nextConfig.basePath}(/?)(.*) -> /$2'`,
     url: "http://localhost:" + process.env.WEB_SERVER_PORT + nextConfig.basePath,
     stdout: "ignore",
     stderr: "pipe",
