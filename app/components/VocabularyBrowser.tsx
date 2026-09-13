@@ -41,7 +41,7 @@ export function VocabularyBrowser({ units }: VocabularyBrowserProps) {
       />
       {units.map((entry, index) => (
         <VocabularyTable
-          key={`${entry.title}-${index}`}
+          key={entry.title}
           title={entry.title}
           words={entry.words}
           query={deferredQuery}
