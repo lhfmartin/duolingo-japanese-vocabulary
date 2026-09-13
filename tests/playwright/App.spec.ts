@@ -74,6 +74,7 @@ COLOR_SCHEMES_TO_TEST.forEach((colorScheme) => {
 
 test("Pressing Control + F will focus the input", async ({ page }) => {
   await page.goto(url);
+  await expect(page.locator("input")).not.toBeFocused();
   await page.keyboard.press("ControlOrMeta+KeyF");
   await expect(page.locator("input")).toBeFocused();
 });
