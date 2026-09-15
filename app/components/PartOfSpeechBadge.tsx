@@ -14,6 +14,7 @@ const PART_OF_SPEECH_TO_COLOR: Record<string, string> = {
   "Ichidan Verb": "#ffe4e6",
   "Irregular Verb": "#fae8ff",
   Prefix: "#e2e8f0",
+  "Noun / Suru Verb": "#edffab",
 };
 
 export default function PartOfSpeechBadge(partOfSpeech: string) {

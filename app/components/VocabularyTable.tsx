@@ -32,7 +32,7 @@ const columns = helper.columns([
   helper.accessor("Part Of Speech", {
     header: "Part Of Speech",
     cell: (cellData) => PartOfSpeechBadge(cellData.getValue() ?? ""),
-    size: 140,
+    size: 160,
     enableGlobalFilter: false,
   }),
 ]);
