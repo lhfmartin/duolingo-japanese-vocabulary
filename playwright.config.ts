@@ -15,4 +15,12 @@ export default defineConfig({
   testDir: "./tests/playwright",
   snapshotPathTemplate: "{testDir}/{testFileName}-snapshots/{arg}{ext}",
   use: { viewport: { width: 1920, height: 1080 } },
+  expect: {
+    toHaveScreenshot: {
+      threshold: 0,
+    },
+    toMatchSnapshot: {
+      threshold: 0,
+    },
+  },
 });
