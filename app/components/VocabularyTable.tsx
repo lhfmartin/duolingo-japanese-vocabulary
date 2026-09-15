@@ -5,7 +5,10 @@ import {
   columnSizingFeature,
   createColumnHelper,
   createFilteredRowModel,
+  filterFn_equalsString,
+  filterFn_includesString,
   globalFilteringFeature,
+  Row,
   tableFeatures,
   useTable,
 } from "@tanstack/react-table";
@@ -38,14 +41,39 @@ interface VocabularyTableProps {
   title: string;
   words: Word[];
   query: string;
+  shouldMatchEntireCell: boolean;
 }
 
-export function VocabularyTable({ words, title, query }: VocabularyTableProps) {
+interface Filter {
+  query: string;
+  shouldMatchEntireCell: boolean;
+}
+
+export function VocabularyTable({
+  words,
+  title,
+  query,
+  shouldMatchEntireCell,
+}: VocabularyTableProps) {
   const table = useTable({
     features,
     columns,
     data: words,
-    state: { globalFilter: query.toLowerCase().trim() },
+    state: {
+      globalFilter: {
+        query: query.trim(),
+        shouldMatchEntireCell: shouldMatchEntireCell,
+      } as unknown as Filter,
+    },
+    globalFilterFn: (row: Row<typeof features, Word>, columnId: string, filterValue: Filter) => {
+      const cellValue = row.getValue(columnId);
+      if (typeof cellValue !== "string") return false;
+      if (filterValue.query.length === 0) return true;
+      if (filterValue.shouldMatchEntireCell) {
+        return cellValue.toLowerCase() === filterValue.query.toLowerCase();
+      }
+      return cellValue.toLowerCase().includes(filterValue.query.toLowerCase());
+    },
   });
 
   const rows = table.getRowModel().rows;

@@ -64,9 +64,15 @@ COLOR_SCHEMES_TO_TEST.forEach((colorScheme) => {
       await expect(page).toHaveScreenshot();
     });
 
+    test("Visual regression testing after clicking Match Entire Cell", async ({ page }) => {
+      await page.goto(url);
+      await page.locator("input[type='button]");
+      await expect(page).toHaveScreenshot();
+    });
+
     test('Visual regression testing for searching for "じゅういちがつ"', async ({ page }) => {
       await page.goto(url);
-      await page.locator("input").fill("じゅういちがつ");
+      await page.getByRole("searchbox").fill("じゅういちがつ");
       await expect(page).toHaveScreenshot();
     });
   });
@@ -74,7 +80,7 @@ COLOR_SCHEMES_TO_TEST.forEach((colorScheme) => {
 
 test("Pressing Control + F will focus the input", async ({ page }) => {
   await page.goto(url);
-  await expect(page.locator("input")).not.toBeFocused();
+  await expect(page.getByRole("searchbox")).not.toBeFocused();
   await page.keyboard.press("ControlOrMeta+KeyF");
-  await expect(page.locator("input")).toBeFocused();
+  await expect(page.getByRole("searchbox")).toBeFocused();
 });

@@ -11,17 +11,24 @@ interface VocabularyBrowserProps {
 
 export function VocabularyBrowser({ units }: VocabularyBrowserProps) {
   const [query, setQuery] = useState("");
+  const [shouldMatchEntireCell, setShouldMatchEntireCell] = useState(false);
   const deferredQuery = useDeferredValue(query);
 
   return (
     <>
-      <SearchInput query={query} setQuery={setQuery} />
+      <SearchInput
+        query={query}
+        setQuery={setQuery}
+        shouldMatchEntireCell={shouldMatchEntireCell}
+        setShouldMatchEntireCell={setShouldMatchEntireCell}
+      />
       {units.map((entry) => (
         <VocabularyTable
           key={entry.title}
           title={entry.title}
           words={entry.words}
           query={deferredQuery}
+          shouldMatchEntireCell={shouldMatchEntireCell}
         />
       ))}
     </>
