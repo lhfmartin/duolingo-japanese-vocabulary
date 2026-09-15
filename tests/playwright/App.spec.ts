@@ -66,7 +66,7 @@ COLOR_SCHEMES_TO_TEST.forEach((colorScheme) => {
 
     test("Visual regression testing after clicking Match Entire Cell", async ({ page }) => {
       await page.goto(url);
-      await page.locator("input[type='button]");
+      await page.locator("input[type='button']").click();
       await expect(page).toHaveScreenshot();
     });
 
