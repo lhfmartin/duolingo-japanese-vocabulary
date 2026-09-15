@@ -75,6 +75,15 @@ COLOR_SCHEMES_TO_TEST.forEach((colorScheme) => {
       await page.getByRole("searchbox").fill("じゅういちがつ");
       await expect(page).toHaveScreenshot();
     });
+
+    test('Visual regression testing for searching for "すし", then click Match Entire Cell', async ({
+      page,
+    }) => {
+      await page.goto(url);
+      await page.getByRole("searchbox").fill("すし");
+      await page.locator("input[type='button']").click();
+      await expect(page).toHaveScreenshot();
+    });
   });
 });
 
