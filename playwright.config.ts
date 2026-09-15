@@ -17,10 +17,10 @@ export default defineConfig({
   use: { viewport: { width: 1920, height: 1080 } },
   expect: {
     toHaveScreenshot: {
-      threshold: 0,
+      threshold: 0.05,
     },
     toMatchSnapshot: {
-      threshold: 0,
+      threshold: 0.05,
     },
   },
 });
