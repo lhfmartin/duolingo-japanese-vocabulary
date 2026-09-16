@@ -18,7 +18,7 @@ Static site that renders Duolingo Japanese vocabulary from CSV files into per-un
 - `pnpm build` — static export to `./out` (deployed to GitHub Pages via CI)
 - `pnpm lint` / `pnpm lint:fix` — **oxlint** (not eslint/standard)
 - `pnpm fmt` / `pnpm fmt:check` — **oxfmt** (not prettier)
-- No test framework is configured.
+- `pnpm test` — runs `pnpm build` if the environment is not CI, then runs the tests
 
 ## Package manager
 
@@ -26,7 +26,7 @@ Use `pnpm` (v10.29.3, pinned via `packageManager`). `pnpm-workspace.yaml` only l
 
 ## Serving data (read-only)
 
-Vocabulary lives in `data/*.csv` with columns `Kana, Kanji, Meaning, Notes, Part Of Speech, Romaji` — see `types/word.ts`. Files are read at build time by `lib/load-vocabulary.ts`, ordered by parsing `Section N` / `Unit N` from each filename (non-matching files sort last). To add words, add or edit a CSV in `data/` (UTF-8 w/ optional BOM handled via `mapHeaders`); filenames must follow `Section N - Unit N <Title>.csv`, except for a few course update units in section 3, which should be placed between unit 14 and 15 of section 3.
+Vocabulary lives in `data/*.csv` with columns `Kana, Kanji, Meaning, Notes, Part Of Speech, Romaji` — see `types/word.ts`. Files are read at build time by `lib/load-vocabulary-data.ts`, ordered by parsing `Section N` / `Unit N` from each filename (non-matching files sort last). To add words, add or edit a CSV in `data/` (UTF-8 w/ optional BOM handled via `mapHeaders`); filenames must follow `Section N - Unit N <Title>.csv`, except for a few course update units in section 3, which should be placed between unit 14 and 15 of section 3.
 
 ## Deployment / base path
 
