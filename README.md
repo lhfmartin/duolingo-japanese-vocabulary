@@ -10,3 +10,10 @@ Due to the 2026 course update, the units from section 1 unit 1 to section 3 unit
 pnpm install
 pnpm dev
 ```
+
+## Building and serving locally
+
+```bash
+pnpm build
+pnpm exec ws -d out --rewrite '/duolingo-japanese-vocabulary(/?)(.*) -> /$2'
+```
