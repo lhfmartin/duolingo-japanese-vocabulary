@@ -1,3 +1,5 @@
+"use client";
+
 import { Dispatch, RefObject, SetStateAction, useEffect, useRef } from "react";
 
 export default function SearchInput({

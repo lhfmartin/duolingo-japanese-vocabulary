@@ -16,12 +16,14 @@ export function VocabularyBrowser({ units }: VocabularyBrowserProps) {
 
   return (
     <>
-      <SearchInput
-        query={query}
-        setQuery={setQuery}
-        shouldMatchEntireCell={shouldMatchEntireCell}
-        setShouldMatchEntireCell={setShouldMatchEntireCell}
-      />
+      <div className="sticky top-0 z-10 bg-background py-6 flex flex-wrap items-center gap-y-6 mb-0">
+        <SearchInput
+          query={query}
+          setQuery={setQuery}
+          shouldMatchEntireCell={shouldMatchEntireCell}
+          setShouldMatchEntireCell={setShouldMatchEntireCell}
+        />
+      </div>
       {units.map((entry) => (
         <VocabularyTable
           key={entry.title}
