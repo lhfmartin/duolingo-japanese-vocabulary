@@ -5,8 +5,6 @@ import {
   columnSizingFeature,
   createColumnHelper,
   createFilteredRowModel,
-  filterFn_equalsString,
-  filterFn_includesString,
   globalFilteringFeature,
   Row,
   tableFeatures,
@@ -14,6 +12,7 @@ import {
 } from "@tanstack/react-table";
 import type { Word } from "@/types/word";
 import PartOfSpeechBadge from "@/app/components/PartOfSpeechBadge";
+import { removeWhitespaces } from "@/lib/string-utils";
 
 const features = tableFeatures({
   columnSizingFeature,
@@ -82,7 +81,11 @@ export function VocabularyTable({
   }
 
   return (
-    <section className="space-y-3">
+    <section
+      id={removeWhitespaces(title)}
+      className="space-y-3"
+      style={{ scrollMarginTop: "var(--search-bar-height)" }}
+    >
       <h2 className="text-xl font-semibold">{title}</h2>
       <div className="overflow-x-auto rounded-lg border border-zinc-200">
         <table className="w-full table-fixed border-collapse text-left text-sm">
