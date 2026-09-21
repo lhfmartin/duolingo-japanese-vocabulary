@@ -102,9 +102,16 @@ test("Pressing Control + F will focus the input", async ({ page }) => {
 
 test("Clicking on the edge of the FAB will open the modal", async ({ page }) => {
   await page.goto(url);
-  const fab = page.getByRole("button", { name: "Open modal" });
-  await fab.click({
-    position: { x: (await fab.boundingBox())!.width / 2, y: 0 },
+  await page.evaluate(() => {
+    document.documentElement.style.setProperty("--default-transition-duration", "0s");
   });
+
+  const {
+    x: fabX,
+    y: fabY,
+    width: fabWitdh,
+  } = (await page.getByRole("button", { name: "Open modal" }).boundingBox())!;
+  await page.mouse.click(fabX + fabWitdh / 2, fabY, { delay: 50 });
+
   await expect(page.getByTestId("modal")).toBeVisible();
 });
