@@ -50,7 +50,10 @@ export function NavigationModal({
         className="fixed inset-0 bg-black/30"
         onClick={onClose}
       />
-      <div className="relative z-50 flex h-[50%] w-[360px] flex-col overflow-hidden rounded-2xl bg-background shadow-2xl dark:border dark:border-pink-200">
+      <div
+        className="relative z-50 flex h-[50%] w-[360px] flex-col overflow-hidden rounded-2xl bg-background shadow-2xl dark:border dark:border-pink-200"
+        data-testid="modal"
+      >
         <div className="flex items-center justify-end px-3 py-3">
           <button
             type="button"

@@ -84,6 +84,12 @@ COLOR_SCHEMES_TO_TEST.forEach((colorScheme) => {
       await page.locator("input[type='button']").click();
       await expect(page).toHaveScreenshot();
     });
+
+    test("Visual regression testing for the modal", async ({ page }) => {
+      await page.goto(url);
+      await page.getByRole("button", { name: "Open modal" }).click();
+      await expect(page).toHaveScreenshot();
+    });
   });
 });
 
@@ -92,4 +98,13 @@ test("Pressing Control + F will focus the input", async ({ page }) => {
   await expect(page.getByRole("searchbox")).not.toBeFocused();
   await page.keyboard.press("ControlOrMeta+KeyF");
   await expect(page.getByRole("searchbox")).toBeFocused();
+});
+
+test("Clicking on the edge of the FAB will open the modal", async ({ page }) => {
+  await page.goto(url);
+  const fab = page.getByRole("button", { name: "Open modal" });
+  await fab.click({
+    position: { x: (await fab.boundingBox())!.width / 2, y: 0 },
+  });
+  await expect(page.getByTestId("modal")).toBeVisible();
 });
