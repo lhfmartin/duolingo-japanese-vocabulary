@@ -1,28 +1,28 @@
-﻿Kana,Kanji,Meaning,Notes,Part Of Speech,Romaji
+﻿Kana,Kanji,Romaji,Meaning,Notes,Part Of Speech
 でんしゃ,"電｜車
-でん｜しゃ",Train,,Noun (n.),de-n-sha
+でん｜しゃ",de-n-sha,Train,,Noun (n.)
+に,,ni,To (direction) / Toward,,Particle
+いく,行く,i-ku,To go / To move (towards),"Godan verb, 行きます is the present polite form",Godan Verb
+くる,来る,ku-ru,To come,"Irregular verb, きます is the present polite form",Irregular Verb
+つぎ,次,tsu-ki,Next,,Noun (n.)
 しぶや,"渋｜谷
-しぶ｜や",Shibuya,,Noun (n.),shi-bu-ya
-に,,To (direction) / Toward,,Particle,ni
-いく,行く,To go / To move (towards),"Godan verb, 行きます is the present polite form",Godan Verb,i-ku
-つぎ,次,Next,,Noun (n.),tsu-ki
+しぶ｜や",shi-bu-ya,Shibuya,,Noun (n.)
 よこはま,"横｜浜
-よこ｜はま",Yokohama,,Noun (n.),yo-ko-ha-ma
-どのくらい,どの位,How long,,Expression,do-no-gu-ra-i
-かかる,掛かる,To take (a resource),"Godan verb, かかります is the present polite form",Godan Verb,ka-ka-ru
-ふん,分,Minute,,Noun (n.),hu-n
-ぐらい,,Approximately,,Particle,gu-ra-i
-あきはばら,秋葉原,Akihabara,,Noun (n.),a-ki-ha-ba-ra
-くる,来る,To come,"Irregular verb, きます is the present polite form",Irregular Verb,ku-ru
-もうすぐ,もう直ぐ,Soon,,Adverb,mo-u-su-gu
-あさくさ,浅草,Asakusa,,Noun (n.),a-sa-ku-sa
-うえの,上野,Ueno,,Noun (n.),u-e-no
+よこ｜はま",yo-ko-ha-ma,Yokohama,,Noun (n.)
+あきはばら,秋葉原,a-ki-ha-ba-ra,Akihabara,,Noun (n.)
+あさくさ,浅草,a-sa-ku-sa,Asakusa,,Noun (n.)
+うえの,上野,u-e-no,Ueno,,Noun (n.)
 こうえん,"公｜園
-こう｜えん",Park,,Noun (n.),ko-u-e-n
-はやい,早い,Fast,,I-Adjective,ha-ya-i
+こう｜えん",ko-u-e-n,Park,,Noun (n.)
+どのくらい,どの位,do-no-gu-ra-i,How long,,Expression
+かかる,掛かる,ka-ka-ru,To take (a resource),"Godan verb, かかります is the present polite form",Godan Verb
+ふん,分,hu-n,Minute,,Noun (n.)
 じかん,"時｜間
-じ｜かん",Time / Hour,,Noun (n.),ji-ka-n
+じ｜かん",ji-ka-n,Time / Hour,,Noun (n.)
+ぐらい,,gu-ra-i,Approximately,,Particle
+もうすぐ,もう直ぐ,mo-u-su-gu,Soon,,Adverb
+はやい,早い,ha-ya-i,Fast,,I-Adjective
+ながい,長い,na-ga-i,Long (distance / length / time),,I-Adjective
 しゅうてん,"終｜点
-しゅう｜てん",Terminus,,Noun (n.),syu-u-te-n
-ながい,長い,Long (distance / length / time),,I-Adjective,na-ga-i
-たい,,Want to (do something),v. -masu stem + たい,Other,ta-i
+しゅう｜てん",syu-u-te-n,Terminus,,Noun (n.)
+たい,,ta-i,Want to (do something),v. -masu stem + たい,Other

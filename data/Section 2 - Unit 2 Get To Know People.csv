@@ -1,28 +1,28 @@
-﻿Kana,Kanji,Meaning,Notes,Part Of Speech,Romaji
-おはようございます,,Good morning,,Expression,o-ha-you-go-za-i-ma-su
-はじめまして,,Nice to meet you,はじ → 初,Expression,ha-ji-me-ma-shi-te
-しゅっしん,出身,One’s origin,,Noun (n.),syus-shi-n
-とても,迚も,Very,Usually written using kana alone,Adverb,to-te-mo
-どう,如何,How / How about,Usually written using kana alone,Adverb,dou
-ようこそ,,Welcome,,Expression,you-ko-so
-に,,at / in / on / during,,Particle,ni
-にぎやか,,Lively,にぎ → 賑,Na-adjective,ni-gi-ya-ka
-も,,Also,,Particle,mo
-とし,"都｜市
-と｜し",City,,Noun (n.),to-shi
-まち,町,Town,,Noun (n.),ma-chi
+﻿Kana,Kanji,Romaji,Meaning,Notes,Part Of Speech
+おはようございます,,o-ha-you-go-za-i-ma-su,Good morning,,Expression
+しゅっしん,出身,syus-shi-n,One’s origin,,Noun (n.)
+にぎやか,,ni-gi-ya-ka,Lively,にぎ → 賑,Na-adjective
+しずか,,shi-zu-ka,Quiet,しず → 静,Na-adjective
+おなまえ,,o-na-ma-e,Name,"お is a polite prefix
+な → 名
+まえ → 前",Noun (n.)
+ようこそ,,you-ko-so,Welcome,,Expression
+はじめまして,,ha-ji-me-ma-shi-te,Nice to meet you,はじ → 初,Expression
 とうきょう,"東｜京
-とう｜きょう",,,Noun (n.),to-u-kyo-u
-すむ,住む,Live (reside),"Godan verb
+とう｜きょう",to-u-kyo-u,,,Noun (n.)
+も,,mo,Also,,Particle
+に,,ni,at / in / on / during,,Particle
+すむ,住む,su-mu,Live (reside),"Godan verb
 te-form: 住んで
 present: 住んでいる
-present (polite): 住んでいます",Godan Verb,su-mu
-おなまえ,,Name,"お is a polite prefix
-な → 名
-まえ → 前",Noun (n.),o-na-ma-e
-しずか,,Quiet,しず → 静,Na-adjective,shi-zu-ka
-いらっしゃいませ,,Welcome,,Expression,i-ras-sha-i-ma-se
+present (polite): 住んでいます",Godan Verb
+ます,,ma-su,Express politeness towards the listener,,Other
+とし,"都｜市
+と｜し",to-shi,City,,Noun (n.)
+どう,如何,dou,How / How about,Usually written using kana alone,Adverb
 きれい,"綺｜麗
-き｜れい","1. Pretty
-2. Clean",な-adj,Na-adjective,ki-re-i
-ます,,Express politeness towards the listener,,Other,ma-su
+き｜れい",ki-re-i,"1. Pretty
+2. Clean",な-adj,Na-adjective
+とても,迚も,to-te-mo,Very,Usually written using kana alone,Adverb
+まち,町,ma-chi,Town,,Noun (n.)
+いらっしゃいませ,,i-ras-sha-i-ma-se,Welcome,,Expression

@@ -1,10 +1,10 @@
-﻿Kana,Kanji,Meaning,Notes,Part Of Speech,Romaji
-じん,,[Suffix] -ian (person from a country),カナダじん → Canadian,Suffix,ji-n
-おおきい,大きい,Big,,I-Adjective,o-o-ki-i
-イギリス,,United Kingdom,,Noun (n.),i-gi-ri-su
-アメリカ,,United Stated of America,,Noun (n.),a-me-ri-ka
-ちいさい,小さい,small,,I-Adjective,chi-i-sa-i
-カナダ,,Canada,,Noun (n.),ka-na-da
-わたし,私,I,,Pronoun,wa-ta-shi
-にほん,日本,Japan,,Noun (n.),ni-ho-n
-ブラジル,,Brazil,,Noun (n.),bu-ra-ji-ru
+﻿Kana,Kanji,Romaji,Meaning,Notes,Part Of Speech
+おおきい,大きい,o-o-ki-i,Big,,I-Adjective
+じん,,ji-n,[Suffix] -ian (person from a country),カナダじん → Canadian,Suffix
+わたし,私,wa-ta-shi,I,,Pronoun
+にほん,日本,ni-ho-n,Japan,,Noun (n.)
+アメリカ,,a-me-ri-ka,United Stated of America,,Noun (n.)
+ちいさい,小さい,chi-i-sa-i,small,,I-Adjective
+カナダ,,ka-na-da,Canada,,Noun (n.)
+ブラジル,,bu-ra-ji-ru,Brazil,,Noun (n.)
+イギリス,,i-gi-ri-su,United Kingdom,,Noun (n.)

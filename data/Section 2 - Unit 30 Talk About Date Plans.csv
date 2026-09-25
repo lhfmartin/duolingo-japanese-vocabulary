@@ -1,26 +1,26 @@
-﻿Kana,Kanji,Meaning,Notes,Part Of Speech,Romaji
+﻿Kana,Kanji,Romaji,Meaning,Notes,Part Of Speech
 たんじょうび,"誕｜生｜日
-たん｜じょう｜び",Birthday,,Noun (n.),ta-n-jyo-u-bi
-デート,,Date (with someone),,Noun (n.),dee-to
-おしゃれ,"お｜洒｜落
-お｜しゃ｜れ",Stylish,,Na-adjective,o-sha-re
-プレゼント,,Present / Gift,,Noun (n.),pu-re-ze-n-to
-ブラウス,,Blouse,,Noun (n.),bu-ra-u-su
-えいがかん,"映｜画｜館
-えい｜が｜かん",Movie theater,,Noun (n.),e-i-ga-ka-n
-うた,歌,Song,,Noun (n.),u-ta
-ひと,人,Person,,Noun (n.),hi-to
-うでどけい,"腕｜時計
-うで｜どけい",Watch,,Noun (n.),u-de-do-ke-i
-ネックレス,,Necklace,,Noun (n.),nek-ku-re-su
-スーツ,,Suit,,Noun (n.),suu-tsu
-かんとく,"監｜督
-かん｜とく",Director,,Noun (n.),ka-n-to-ku
-ホットドッグ,,Hot dog,,Noun (n.),hot-to-dog-gu
-ポップコーン,,Pop corn,,Noun (n.),pop-pu-koo-n
-よやく,"予｜約
-よ｜やく",Reservation,,Noun (n.),yo-ya-ku
-ワイン,,Wine,,Noun (n.),wa-i-n
-ステーキ,,Steak,,Noun (n.),su-tee-ki
+たん｜じょう｜び",ta-n-jyo-u-bi,Birthday,,Noun (n.)
+プレゼント,,pu-re-ze-n-to,Present / Gift,,Noun (n.)
 もらう,"貰｜う
-もら｜う",To receive,もらいました is the past polite form,Godan Verb,mo-ra-u
+もら｜う",mo-ra-u,To receive,もらいました is the past polite form,Godan Verb
+うた,歌,u-ta,Song,,Noun (n.)
+デート,,dee-to,Date (with someone),,Noun (n.)
+おしゃれ,"お｜洒｜落
+お｜しゃ｜れ",o-sha-re,Stylish,,Na-adjective
+ブラウス,,bu-ra-u-su,Blouse,,Noun (n.)
+うでどけい,"腕｜時計
+うで｜どけい",u-de-do-ke-i,Watch,,Noun (n.)
+ネックレス,,nek-ku-re-su,Necklace,,Noun (n.)
+スーツ,,suu-tsu,Suit,,Noun (n.)
+えいがかん,"映｜画｜館
+えい｜が｜かん",e-i-ga-ka-n,Movie theater,,Noun (n.)
+かんとく,"監｜督
+かん｜とく",ka-n-to-ku,Director,,Noun (n.)
+ひと,人,hi-to,Person,,Noun (n.)
+ホットドッグ,,hot-to-dog-gu,Hot dog,,Noun (n.)
+ポップコーン,,pop-pu-koo-n,Pop corn,,Noun (n.)
+ワイン,,wa-i-n,Wine,,Noun (n.)
+ステーキ,,su-tee-ki,Steak,,Noun (n.)
+よやく,"予｜約
+よ｜やく",yo-ya-ku,Reservation,,Noun (n.)

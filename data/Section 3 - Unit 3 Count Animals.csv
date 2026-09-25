@@ -1,28 +1,28 @@
-﻿Kana,Kanji,Meaning,Notes,Part Of Speech,Romaji
+﻿Kana,Kanji,Romaji,Meaning,Notes,Part Of Speech
 にんき,"人｜気
-にん｜き",Popularity,,Noun (n.),ni-n-ki
-ねこ,猫,Cat,,Noun (n.),ne-ko
-へや,部屋,Room,,Noun (n.),he-ya
+にん｜き",ni-n-ki,Popularity,,Noun (n.)
+ねこ,猫,ne-ko,Cat,,Noun (n.)
+いぬ,犬,i-nu,Dog,,Noun (n.)
+ハムスター,,ha-mu-su-taa,Hamster,,Noun (n.)
+カメレオン,,ka-me-re-o-n,Chameleon,,Noun (n.)
 どうぶつ,"動｜物
-どう｜ぶつ",Animal,,Noun (n.),do-u-bu-tsu
-ひき,匹,Counter for small animals,,Counter,hi-ki
-さんびき,"三｜匹
-さん｜びき",Three (small animals),,Noun (n.),sa-n-bi-ki
-いぬ,犬,Dog,,Noun (n.),i-nu
-みみ,耳,Ear,,Noun (n.),mi-mi
-ハムスター,,Hamster,,Noun (n.),ha-mu-su-taa
-カプチーノ,,Cappuccino,,Noun (n.),ka-pu-chii-no
-ちゃいろ,"茶｜色
-ちゃ｜いろ",Brown,,Noun (n.),cha-i-ro
-め,目,Eye,,Noun (n.),me
-パン,,Pan,,Noun (n.),pa-n
+どう｜ぶつ",do-u-bu-tsu,Animal,,Noun (n.)
+へや,部屋,he-ya,Room,,Noun (n.)
+すみ,隅,su-mi,Corner,,Noun (n.)
+ひき,匹,hi-ki,Counter for small animals,,Counter
 いっぴき,"一｜匹
-いっ｜ぴき",One (small animal),,Noun (n.),ip-pi-ki
-くち,口,Mouth,,Noun (n.),ku-chi
-トマト,,Tomato,,Noun (n.),to-ma-to
+いっ｜ぴき",ip-pi-ki,One (small animal),,Noun (n.)
+さんびき,"三｜匹
+さん｜びき",sa-n-bi-ki,Three (small animals),,Noun (n.)
 なんびき,"何｜匹
-なん｜びき",How many (small animals),,Expression,na-n-bi-ki
-はな,鼻,Nose,,Noun (n.),ha-na
-カメレオン,,Chameleon,,Noun (n.),ka-me-re-o-n
-カラフル,,Colorful,,Na-adjective,ka-ra-hu-ru
-すみ,隅,Corner,,Noun (n.),su-mi
+なん｜びき",na-n-bi-ki,How many (small animals),,Expression
+みみ,耳,mi-mi,Ear,,Noun (n.)
+め,目,me,Eye,,Noun (n.)
+くち,口,ku-chi,Mouth,,Noun (n.)
+はな,鼻,ha-na,Nose,,Noun (n.)
+カプチーノ,,ka-pu-chii-no,Cappuccino,,Noun (n.)
+パン,,pa-n,Pan,,Noun (n.)
+トマト,,to-ma-to,Tomato,,Noun (n.)
+ちゃいろ,"茶｜色
+ちゃ｜いろ",cha-i-ro,Brown,,Noun (n.)
+カラフル,,ka-ra-hu-ru,Colorful,,Na-adjective

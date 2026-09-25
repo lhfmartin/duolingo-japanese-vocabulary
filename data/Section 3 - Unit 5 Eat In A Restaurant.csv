@@ -1,42 +1,42 @@
-﻿Kana,Kanji,Meaning,Notes,Part Of Speech,Romaji
-いらっしゃいませ,,Welcome,,Expression,i-ras-sya-i-ma-se
-めい,名,Counter for people (for seats and reservations),Formal,Counter,me-i
-さま,様,Make a word more polite (usually in fixed expressions),,Suffix,sa-ma
+﻿Kana,Kanji,Romaji,Meaning,Notes,Part Of Speech
+いらっしゃいませ,,i-ras-sya-i-ma-se,Welcome,,Expression
+めい,名,me-i,Counter for people (for seats and reservations),Formal,Counter
+さま,様,sa-ma,Make a word more polite (usually in fixed expressions),,Suffix
 めいさま,"名｜様
-めい｜さま",Counter for people (for seats and reservations),Honorific language,Counter,me-i-sa-ma
+めい｜さま",me-i-sa-ma,Counter for people (for seats and reservations),Honorific language,Counter
 よにん,"四｜人
-よ｜にん",Four people,,Noun (n.),yo-ni-n
-ウーロンちゃ,烏龍茶,Oolong tea,,Noun (n.),uu-ro-n-cha
-ぎょうざ,餃子,Fried dumplings / Gyoza,"Usually written in katakana, i.e. ギョーザ",Noun (n.),gyo-u-za
-ぜんぶ,"全｜部
-ぜん｜ぶ",All,,Noun (n.),ze-n-bu
-ぜんぶで,"全｜部｜で
-ぜん｜ぶ｜で",In total,,Expression,ze-n-bu-de
-ちゅうかがい,"中｜華｜街
-ちゅう｜か｜がい",Chinatown,,Noun (n.),cyu-u-ka-ga-i
-ちゅうか,"中｜華
-ちゅう｜か",China / Chinese,,Prefix,cyu-u-ka
-がい,街,Street / District / Area,,Suffix,ga-i
-タピオカティー,,Bubble tea / Tapioca tea,,Noun (n.),ta-pi-o-ka-tii
-あく,開く,To open,あきます is the present polite form,Godan Verb,a-ku
-メニュー,,Menu,,Noun (n.),me-nyuu
-つめたい,"冷｜た｜い
-つめ｜た｜い",Cold,,I-Adjective,tsu-me-ta-i
-はし,箸,Chopsticks,,Noun (n.),ha-shi
-スープ,,(Western) soup,,Noun (n.),suu-pu
-マーボーどうふ,麻婆豆腐,Mapo tofu,,Noun (n.),maa-boo-do-u-hu
+よ｜にん",yo-ni-n,Four people,,Noun (n.)
+ウーロンちゃ,烏龍茶,uu-ro-n-cha,Oolong tea,,Noun (n.)
+タピオカティー,,ta-pi-o-ka-tii,Bubble tea / Tapioca tea,,Noun (n.)
+ぎょうざ,餃子,gyo-u-za,Fried dumplings / Gyoza,"Usually written in katakana, i.e. ギョーザ",Noun (n.)
+スープ,,suu-pu,(Western) soup,,Noun (n.)
+マーボーどうふ,麻婆豆腐,maa-boo-do-u-hu,Mapo tofu,,Noun (n.)
+えび,海老,e-bi,Shrimp,,Noun (n.)
 からい,"辛｜い
-から｜い",Spicy,,I-Adjective,ka-ra-i
+から｜い",ka-ra-i,Spicy,,I-Adjective
+つめたい,"冷｜た｜い
+つめ｜た｜い",tsu-me-ta-i,Cold,,I-Adjective
+ぜんぶ,"全｜部
+ぜん｜ぶ",ze-n-bu,All,,Noun (n.)
+ぜんぶで,"全｜部｜で
+ぜん｜ぶ｜で",ze-n-bu-de,In total,,Expression
+ちゅうかがい,"中｜華｜街
+ちゅう｜か｜がい",cyu-u-ka-ga-i,Chinatown,,Noun (n.)
+ちゅうか,"中｜華
+ちゅう｜か",cyu-u-ka,China / Chinese,,Prefix
+がい,街,ga-i,Street / District / Area,,Suffix
+あく,開く,a-ku,To open,あきます is the present polite form,Godan Verb
+メニュー,,me-nyuu,Menu,,Noun (n.)
 てんいん,"店｜員
-てん｜いん",Employee of a store,,Noun (n.),te-n-i-n
-ナプキン,,Napkin,,Noun (n.),na-pu-ki-n
-えび,海老,Shrimp,,Noun (n.),e-bi
+てん｜いん",te-n-i-n,Employee of a store,,Noun (n.)
+はし,箸,ha-shi,Chopsticks,,Noun (n.)
+ナプキン,,na-pu-ki-n,Napkin,,Noun (n.)
 おおい,"多｜い
-おお｜い",Many / A lot,,I-Adjective,o-o-i
-おつり,"お｜釣｜り
-お｜つ｜り",Change,,Noun (n.),o-tsu-ri
+おお｜い",o-o-i,Many / A lot,,I-Adjective
 かいけい,"会｜計
-かい｜けい",Cashier,,Noun (n.),ka-i-ke-i
-どうぞ,,Here you are,Used when handing something to someone,Adverb,do-u-zo
-それと,其れと,Also,,Conjunction,so-re-to
-なので,,Therefore,,Conjunction,na-no-de
+かい｜けい",ka-i-ke-i,Cashier,,Noun (n.)
+おつり,"お｜釣｜り
+お｜つ｜り",o-tsu-ri,Change,,Noun (n.)
+どうぞ,,do-u-zo,Here you are,Used when handing something to someone,Adverb
+それと,其れと,so-re-to,Also,,Conjunction
+なので,,na-no-de,Therefore,,Conjunction

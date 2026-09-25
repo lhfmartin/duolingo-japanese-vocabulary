@@ -1,11 +1,11 @@
-﻿Kana,Kanji,Meaning,Notes,Part Of Speech,Romaji
-ホテル,,Hotel,,Noun (n.),ho-te-ru
-だいがく,,University,,Noun (n.),da-i-ga-ku
-バスてい,,Bus stop,"バス → Bus
-てい → 停",Noun (n.),ba-su-te-i
-えき,駅,Train station,,Noun (n.),e-ki
-デパート,,Department store,,Noun (n.),de-paa-to
-どこ,,Where?,ホテルはどこですか。→ Where is the hotel?,Pronoun,do-ko
-ここ,,Here,,Pronoun,ko-ko
-そこ,,there (place relatively near listener),,Pronoun,so-ko
-コンビニ,,Convenience store,,Noun (n.),ko-n-bi-ni
+﻿Kana,Kanji,Romaji,Meaning,Notes,Part Of Speech
+ホテル,,ho-te-ru,Hotel,,Noun (n.)
+どこ,,do-ko,Where?,ホテルはどこですか。→ Where is the hotel?,Pronoun
+そこ,,so-ko,there (place relatively near listener),,Pronoun
+バスてい,,ba-su-te-i,Bus stop,"バス → Bus
+てい → 停",Noun (n.)
+ここ,,ko-ko,Here,,Pronoun
+デパート,,de-paa-to,Department store,,Noun (n.)
+コンビニ,,ko-n-bi-ni,Convenience store,,Noun (n.)
+えき,駅,e-ki,Train station,,Noun (n.)
+だいがく,,da-i-ga-ku,University,,Noun (n.)

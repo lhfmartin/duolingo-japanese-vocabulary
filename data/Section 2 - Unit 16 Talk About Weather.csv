@@ -1,29 +1,29 @@
-﻿Kana,Kanji,Meaning,Notes,Part Of Speech,Romaji
+﻿Kana,Kanji,Romaji,Meaning,Notes,Part Of Speech
 てんき,"天｜気
-てん｜き",Weather,,Noun (n.),te-n-ki
-あめ,雨,Rain / Rainy day,,Noun (n.),a-me
-はれ,晴れ,Clear weather,,Noun (n.),ha-re
-うみ,海,Sea / Ocean,うみに行きます → go to the beach,Noun (n.),u-mi
-ゆき,雪,Snow,,Noun (n.),yu-ki
+てん｜き",te-n-ki,Weather,,Noun (n.)
+あめ,雨,a-me,Rain / Rainy day,,Noun (n.)
+はれ,晴れ,ha-re,Clear weather,,Noun (n.)
+ゆき,雪,yu-ki,Snow,,Noun (n.)
 あたたかい,"暖｜かい
-あたた｜かい",Warm,,I-Adjective,a-ta-ta-ka-i
-はる,春,Spring,,Noun (n.),ha-ru
-ひ,日,Day / Sun,,Noun (n.),hi
-なつ,夏,Summer,,Noun (n.),na-tsu
-がつ,月,Suffix for month names,num. + ga-tsu → num. 月,Suffix,ga-tsu
-プール,,Swimming pool,,Noun (n.),puu-ru
-あつい,熱い,Hot,,I-Adjective,a-tsu-i
-やすみ,休み,(n.) Rest,,Noun (n.),ya-su-mi
+あたた｜かい",a-ta-ta-ka-i,Warm,,I-Adjective
+あつい,熱い,a-tsu-i,Hot,,I-Adjective
+くもり,曇り,ku-mo-ri,Cloudy weather,,Noun (n.)
+さむい,寒い,sa-mu-i,Cold,,I-Adjective
+うみ,海,u-mi,Sea / Ocean,うみに行きます → go to the beach,Noun (n.)
+プール,,puu-ru,Swimming pool,,Noun (n.)
+ひ,日,hi,Day / Sun,,Noun (n.)
 はなび,"花｜火
-はな｜び",Fireworks,,Noun (n.),ha-na-bi
-あき,秋,Autumn,,Noun (n.),a-ki
-くもり,曇り,Cloudy weather,,Noun (n.),ku-mo-ri
-こんばん,"今｜晩
-こん｜ばん",Tonight,,Noun (n.),ko-n-ba-n
-コンサート,,Concert,,Noun (n.),ko-n-saa-to
-さむい,寒い,Cold,,I-Adjective,sa-mu-i
-ふゆ,冬,Winter,,Noun (n.),hu-yu
-ココア,,Cocoa,,Noun (n.),ko-ko-a
+はな｜び",ha-na-bi,Fireworks,,Noun (n.)
+コンサート,,ko-n-saa-to,Concert,,Noun (n.)
 おんせん,"温｜泉
-おん｜せん",Hot spring,,Noun (n.),o-n-se-n
-おもう,思う,To think,"Godan verb, おもいます is the present polite form",Godan Verb,o-mo-u
+おん｜せん",o-n-se-n,Hot spring,,Noun (n.)
+はる,春,ha-ru,Spring,,Noun (n.)
+なつ,夏,na-tsu,Summer,,Noun (n.)
+あき,秋,a-ki,Autumn,,Noun (n.)
+ふゆ,冬,hu-yu,Winter,,Noun (n.)
+がつ,月,ga-tsu,Suffix for month names,num. + ga-tsu → num. 月,Suffix
+やすみ,休み,ya-su-mi,(n.) Rest,,Noun (n.)
+こんばん,"今｜晩
+こん｜ばん",ko-n-ba-n,Tonight,,Noun (n.)
+ココア,,ko-ko-a,Cocoa,,Noun (n.)
+おもう,思う,o-mo-u,To think,"Godan verb, おもいます is the present polite form",Godan Verb

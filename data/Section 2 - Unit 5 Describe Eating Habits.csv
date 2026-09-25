@@ -1,25 +1,25 @@
-﻿Kana,Kanji,Meaning,Notes,Part Of Speech,Romaji
-ばんごはん,"晩｜御｜飯
-ばん｜ご｜はん",Dinner,,Noun (n.),ba-n-go-ha-n
-じゅう,十,Ten,,Other,jyu-u
-きゅう,九,Nine,,Other,kyu-u
-コーヒー,"珈琲
-コー｜ヒー",Coffee,,Noun (n.),koo-hii
-パン,,Bread,,Noun (n.),pa-n
-あさごはん,朝ごはん,Breakfast,,Noun (n.),a-sa-go-ha-n
-どれ,何れ,Which (of three or more),,Pronoun,do-re
-ひるごはん,昼ごはん,Lunch,,Noun (n.),hi-ru-go-ha-n
-しち,七,Seven,,Other,shi-chi
-サンドイッチ,,Sandwich,,Noun (n.),sa-n-do-ic-chi
+﻿Kana,Kanji,Romaji,Meaning,Notes,Part Of Speech
+たべる,食べる,ta-be-ru,Eat,"Ichidan verb, 食べます is the present polite form",Ichidan Verb
+のむ,飲む,no-mu,Drink,"Godan verb, 飲みます is the present polite form",Godan Verb
+やさい,野菜,ya-sa-i,Vegetable,,Noun (n.)
+どれ,何れ,do-re,Which (of three or more),,Pronoun
 まいにち,"毎｜日
-まい｜にち",Every day,,Noun (n.),ma-i-ni-chi
-やさい,野菜,Vegetable,,Noun (n.),ya-sa-i
-たべる,食べる,Eat,"Ichidan verb, 食べます is the present polite form",Ichidan Verb,ta-be-ru
-のむ,飲む,Drink,"Godan verb, 飲みます is the present polite form",Godan Verb,no-mu
+まい｜にち",ma-i-ni-chi,Every day,,Noun (n.)
 まいあさ,"毎｜朝
-まい｜あさ",Every morning,,Noun (n.),ma-i-a-sa
-べんとう,"弁｜当
-べん｜とう",Bento,,Noun (n.),be-n-to-u
-ジュース,,Juice,,Noun (n.),jyuu-su
+まい｜あさ",ma-i-a-sa,Every morning,,Noun (n.)
 まいばん,"毎｜晩
-まい｜ばん",Every night,,Noun (n.),ma-i-ba-n
+まい｜ばん",ma-i-ba-n,Every night,,Noun (n.)
+きゅう,九,kyu-u,Nine,,Other
+しち,七,shi-chi,Seven,,Other
+じゅう,十,jyu-u,Ten,,Other
+パン,,pa-n,Bread,,Noun (n.)
+サンドイッチ,,sa-n-do-ic-chi,Sandwich,,Noun (n.)
+べんとう,"弁｜当
+べん｜とう",be-n-to-u,Bento,,Noun (n.)
+コーヒー,"珈琲
+コー｜ヒー",koo-hii,Coffee,,Noun (n.)
+ジュース,,jyuu-su,Juice,,Noun (n.)
+あさごはん,朝ごはん,a-sa-go-ha-n,Breakfast,,Noun (n.)
+ひるごはん,昼ごはん,hi-ru-go-ha-n,Lunch,,Noun (n.)
+ばんごはん,"晩｜御｜飯
+ばん｜ご｜はん",ba-n-go-ha-n,Dinner,,Noun (n.)
